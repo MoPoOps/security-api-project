@@ -39,7 +39,7 @@ resource "aws_security_group" "api_sg" {
 #4 resource to build the actual server
 resource "aws_instance" "api_server" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
 
   # to attach the firewall i built to this specific server
   vpc_security_group_ids = [aws_security_group.api_sg.id]
