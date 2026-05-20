@@ -1,6 +1,6 @@
 #1 telling Terraform that I am using AWS as my provider
 provider "aws" {
-  region = "eu-south-1" 
+  region = "eu-central-1" 
 }
 
 #2 the data Source to find the operating system
