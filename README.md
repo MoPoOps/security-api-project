@@ -5,7 +5,7 @@
 This project is my step into Infrastructure as Code and Containerization. Instead of just hosting a static website, I built a Python backend API that generates randomized cybersecurity tips. I packaged the application into a Docker container, pushed it to Docker Hub, and wrote Terraform code to automatically deploy it to an AWS EC2 instance. 
 
 ## Architecture Flow
-![Project Architecture](api-architecture.jpg)
+![Project Architecture](api-architecture.png)
 
 1. **Application:** The backend consists of a lightweight Python Flask API that serves randomized cybersecurity best practices in JSON format.
 2. **Containerization:** I packaged the app using Docker and intentionally used the `python:3.9-slim` base image to reduce the security attack surface, then pushed the final image to Docker Hub.
